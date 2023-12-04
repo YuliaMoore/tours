@@ -4,8 +4,268 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TOURS TO THE CARPATHIANS FROM LVIV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./sass/main.css" />
   </head>
   <body>
-    <header></header>
+    <header class="header">
+      <div class="header__container container">
+        <a href="#"> <img class="logo_img" src="./images/logo.png" /> </a>
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">About us</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Tours</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Reviews</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Gallery</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <h1 class="hero__title">TOURS TO THE CARPATHIANS FROM LVIV</h1>
+        <p class="hero__text">
+          Journeys to the very heart of the Carpathians <br />for those who want
+          a real reboot
+        </p>
+        <button class="hero__button">BOOK A TOUR</button>
+        <ul class="social-list">
+          <li>
+            <a href="" class="social-links">
+              <svg class="social__icons" width="40" height="40">
+                <use href="./images/sprite.svg#icon-telegram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="" class="social-links">
+              <svg class="social__icons" width="40" height="40">
+                <use href="./images/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="" class="social-links">
+              <svg class="social__icons" width="40" height="40">
+                <use href="./images/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="about container">
+        <h2>About us</h2>
+        <p class="about-text">
+          Travel is our life. We have been organizing tours to the Carpathians
+          since 2007 and have never been bored for a single day. The Carpathians
+          are many interesting and unexplored places that are worth visiting and
+          showing them to others. <br class="text-break" />Coming to the
+          Carpathians will make you forget about the polluted, noisy world and
+          enjoy untouched nature. From picturesque forests to clean rivers and
+          lakes and Carpathian streams between the mountains, which offer
+          magical landscapes and allow you to forget about all problems and
+          unnecessary thoughts.
+        </p>
+      </section>
+      <section class="advantages container">
+        <h2>Our advantages</h2>
+        <ul class="advantages-list">
+          <li class="advantages-item">
+            <svg class="star" width="26" height="26">
+              <use href="./images/sprite.svg#icon-star"></use>
+            </svg>
+            author's tours
+          </li>
+          <li class="advantages-item">
+            <svg class="star" width="26" height="26">
+              <use href="./images/sprite.svg#icon-star"></use>
+            </svg>
+            individual approach
+          </li>
+          <li class="advantages-item">
+            <svg class="star" width="26" height="26">
+              <use href="./images/sprite.svg#icon-star"></use>
+            </svg>
+            affordable prices
+          </li>
+          <li class="advantages-item">
+            <svg class="star" width="26" height="26">
+              <use href="./images/sprite.svg#icon-star"></use>
+            </svg>
+            comfortable transfer
+          </li>
+          <li class="advantages-item">
+            <svg class="star" width="26" height="26">
+              <use href="./images/sprite.svg#icon-star"></use>
+            </svg>
+            professional guides
+          </li>
+          <li class="advantages-item">
+            <svg class="star" width="26" height="26">
+              <use href="./images/sprite.svg#icon-star"></use>
+            </svg>
+            accommodation in hotels from 3+ *
+          </li>
+        </ul>
+      </section>
+      <section class="tours container">
+        <h2>Upcoming tours</h2>
+        <ul class="tours-list">
+          <li class="tours-item">
+            <img src="./images/tours/hoverla.jpg" alt="" class="tour-image" />
+            <h3 class="tour-title">Ascent to Hoverla</h3>
+            <p class="tour-price">From UAH 4,499/person</p>
+            <button class="tour-button">MORE DETAILS</button>
+          </li>
+          <li class="tours-item">
+            <img src="./images/tours/bukovel.jpg" alt="" class="tour-image" />
+            <h3 class="tour-title">Ski tour to Bukovel</h3>
+            <p class="tour-price">From UAH 7,499/person</p>
+            <button class="tour-button">MORE DETAILS</button>
+          </li>
+          <li class="tours-item">
+            <img
+              src="./images/tours//carpathians.jpg"
+              alt=""
+              class="tour-image"
+            />
+            <h3 class="tour-title">Week in Carpathians</h3>
+            <p class="tour-price">From UAH 9,999/person</p>
+            <button class="tour-button">MORE DETAILS</button>
+          </li>
+        </ul>
+      </section>
+      <section class="reviews container">
+        <h2>Reviews</h2>
+        <ul class="reviews-list">
+          <li class="review-item">
+            <img
+              src="./images/reviews/marina.png"
+              class="review-photo"
+              alt=""
+            />
+            <h3 class="review-name">Maria</h3>
+            <p class="review-text">
+              It was really cool! We saw everything - sun, snow, rain, fog! It's
+              very exciting and interesting, you won't regret it - it's worth
+              going and seeing everything with your own eyes. Everything is
+              organized at the highest level.
+            </p>
+          </li>
+          <li class="review-item">
+            <img src="./images/reviews/ostap.png" class="review-photo" alt="" />
+            <h3 class="review-name">Ostap</h3>
+            <p class="review-text">
+              Good organization, everything went smoothly. Friendly guide Taras
+              told interesting facts about the area and customs throughout the
+              tour.
+            </p>
+          </li>
+          <li class="review-item">
+            <img src="./images/reviews/anita.png" class="review-photo" alt="" />
+            <h3 class="review-name">Anita</h3>
+            <p class="review-text">
+              Who is going to the mountains for the first time - this is exactly
+              the tour and the people who organize everything. Guide Makar is
+              interesting stories, selection of a route for a comfortable
+              ascent, motivation and support.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="gallery container">
+        <h2>Gallery</h2>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/gallery/gallery1.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/gallery/gallery2.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/gallery/gallery3.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/gallery/gallery4.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/gallery/gallery5.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/gallery/gallery6.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/gallery/gallery7.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/gallery/gallery8.jpg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-button-next gallery-button-next"></div>
+          <div class="swiper-button-prev gallery-button-prev"></div>
+        </div>
+      </section>
+      <section class="questions">
+        <div class="questions-card">
+          <h3 class="questions-title">Do you have any questions?</h3>
+          <p class="questions-text">
+            You can leave your questions here and our manager will call you back
+            within 10 minutes
+          </p>
+          <form action="">
+            <label class="questions-form">
+              Your name*
+              <input type="text" name="username" />
+            </label>
+            <label class="questions-form">
+              Phone number*
+              <input type="tel" name="phone" />
+            </label>
+            <button type="submit" class="form-button">CALL ME</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        slidesPerView: 2,
+        spaceBetween: 20,
+      });
+    </script>
   </body>
 </html>

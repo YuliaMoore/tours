@@ -144,7 +144,7 @@ button {
 }
 
 .hero {
-  background-image: url(../../images/hero/hero_desk_bg.jpg);
+  background-image: url(../images/hero/hero_desk_bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

@@ -4,12 +4,16 @@
 }
 
 .review-item {
-  background-image: url(../../images/reviews/Review_desk.jpg);
+  background-image: url(../images/reviews/Review_desk.jpg);
   background-repeat: no-repeat;
   width: 377px;
   height: 570px;
   border: 1px solid #5b86a1;
 }
+.review.card {
+  position: relative;
+}
+
 .review-photo {
   margin-top: 72px;
   margin-left: 126px;

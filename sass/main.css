@@ -50,9 +50,14 @@ h2 {
   text-align: center;
   color: #1b1d1b;
 }
+@media screen and (min-width: 768px) {
+  h2 {
+    margin-bottom: 40px;
+    margin-top: 80px;
+  }
+}
 @media screen and (min-width: 1440px) {
   h2 {
-    margin-top: 80px;
     font-size: 68px;
     line-height: 83px;
     margin-bottom: 60px;
@@ -75,6 +80,11 @@ h2 {
 
 .container {
   padding: 0 32px;
+}
+@media screen and (min-width: 765px) {
+  .container {
+    padding: 0 20px;
+  }
 }
 @media screen and (min-width: 1440px) {
   .container {
@@ -144,11 +154,21 @@ button {
 }
 
 .hero {
-  background-image: url(../images/hero/hero_desk_bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 1024px;
+}
+@media screen and (min-width: 765px) {
+  .hero {
+    background-image: url(../images/hero/hero_tablet_bg.jpg);
+    height: 818px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero {
+    background-image: url(../images/hero/hero_desk_bg.jpg);
+    height: 1024px;
+  }
 }
 
 .hero__title {
@@ -162,8 +182,10 @@ button {
 }
 @media screen and (min-width: 765px) {
   .hero__title {
-    font-size: 40px;
-    line-height: 48.76px;
+    font-size: 68px;
+    font-weight: 400;
+    line-height: 83px;
+    margin-bottom: 40px;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -182,13 +204,18 @@ button {
   letter-spacing: 0em;
   text-align: center;
   color: #f7fbfb;
-  margin-bottom: 88px;
+}
+@media screen and (min-width: 765px) {
+  .hero__text {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 60px;
+  }
 }
 @media screen and (min-width: 1440px) {
   .hero__text {
     font-size: 28px;
     line-height: 34.13px;
-    margin-bottom: 60px;
   }
 }
 
@@ -201,6 +228,12 @@ button {
   font-weight: 500;
   font-size: 16px;
 }
+@media screen and (min-width: 765px) {
+  .hero__button {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
 @media screen and (min-width: 1440px) {
   .hero__button {
     font-size: 24px;
@@ -209,14 +242,22 @@ button {
   }
 }
 
-.social-list {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  position: absolute;
-  left: 88%;
-  top: 649px;
+@media screen and (min-width: 765px) {
+  .social-list {
+    display: none;
+  }
 }
+@media screen and (min-width: 1440px) {
+  .social-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    position: absolute;
+    left: 88%;
+    top: 649px;
+  }
+}
+
 .about-text {
   font-family: Montserrat;
   font-size: 24px;
@@ -230,25 +271,89 @@ button {
   margin-bottom: 10px;
 }
 
+.advantages {
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 765px) {
+  .advantages {
+    background-image: url("../images/advantages/advantages_tablet.jpg"), url("../images/advantages/advatages2_tablet.jpg");
+    background-position: top 100px left, bottom right;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .advantages {
+    background-image: url("../images/advantages/advantages2.jpg"), url("../images/advantages/advantages1.jpg"), url("../images/advantages/advantages3.jpg");
+    background-position: top 140px left, top 223px right, top 223px center;
+    margin-left: 135px;
+    margin-right: 135px;
+  }
+}
+
+@media screen and (min-width: 765px) {
+  .advantages-list {
+    margin-left: 62px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .advantages-list {
+    margin-left: 135px;
+  }
+}
+
+@media screen and (min-width: 765px) {
+  .advatages-title {
+    margin-bottom: 120px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .advatages-title {
+    margin-bottom: 140px;
+  }
+}
+
 .advantages-item {
+  display: flex;
   font-family: Montserrat;
-  font-size: 24px;
   font-weight: 400;
-  line-height: 29px;
   letter-spacing: 0em;
   text-align: left;
   color: #f7fbfb;
-  width: 630px;
   height: 64px;
   background-color: #5b86a1;
-  margin-bottom: 24px;
+  align-items: center;
+}
+@media screen and (min-width: 765px) {
+  .advantages-item {
+    width: 604px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .advantages-item {
+    width: 630px;
+    margin-bottom: 24px;
+    font-size: 24px;
+    line-height: 29px;
+  }
 }
 
-.star {
-  margin-right: 19px;
-  margin-left: 133px;
-  margin-top: 19px;
-  margin-bottom: 19px;
+@media screen and (min-width: 765px) {
+  .star {
+    margin: 12px 12px 12px 44px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .star {
+    margin-right: 19px;
+    margin-left: 133px;
+    margin-top: 19px;
+    margin-bottom: 19px;
+  }
 }
 
 .tours-list {
@@ -268,33 +373,64 @@ button {
 }
 
 .tour-title {
-  font-size: 28px;
   font-weight: 600;
-  line-height: 34px;
   color: #1b1d1b;
   margin-bottom: 20px;
   text-align: left;
   margin-left: 20px;
 }
+@media screen and (min-width: 765px) {
+  .tour-title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .tour-title {
+    line-height: 34px;
+    font-size: 28px;
+  }
+}
 
 .tour-price {
-  font-size: 24px;
   font-weight: 600;
-  line-height: 29px;
   color: #202321;
   margin-bottom: 36px;
   text-align: left;
   margin-left: 20px;
 }
+@media screen and (min-width: 765px) {
+  .tour-price {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .tour-price {
+    line-height: 29px;
+    font-size: 24px;
+  }
+}
 
 .tour-button {
-  font-size: 24px;
   font-weight: 500;
-  line-height: 29px;
-  padding: 20px 75px;
   color: #f7fbfb;
   background-color: #5b86a1;
   margin-bottom: 48px;
+}
+@media screen and (min-width: 765px) {
+  .tour-button {
+    font-size: 20px;
+    line-height: 24px;
+    padding: 16px 79px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .tour-button {
+    font-size: 24px;
+    line-height: 29px;
+    padding: 20px 75px;
+  }
 }
 
 .reviews-list {
@@ -303,11 +439,15 @@ button {
 }
 
 .review-item {
-  background-image: url(../../images/reviews/Review_desk.jpg);
+  background-image: url(../images/reviews/Review_desk.jpg);
   background-repeat: no-repeat;
   width: 377px;
   height: 570px;
   border: 1px solid #5b86a1;
+}
+
+.review.card {
+  position: relative;
 }
 
 .review-photo {
@@ -338,14 +478,16 @@ button {
 
 .questions {
   margin-top: 80px;
-  background-image: url(../../images/questions/desk_bg.jpg);
+  background-image: url(../images/questions/desk_bg.jpg);
+  background-repeat: no-repeat;
   height: 1074px;
+  padding-top: 244px;
+  padding-left: 333px;
 }
 
 .questions-card {
   border: 1px solid #a3a5a3;
   background-color: #f7fbfb;
-  padding-top: 60px;
   width: 774px;
   height: 583px;
   align-content: center;
@@ -355,9 +497,10 @@ button {
 .questions-title {
   font-size: 48px;
   font-weight: 500;
-  line-height: 59px;
+  line-height: 58.51px;
   text-align: center;
   color: #1b1d1b;
+  margin-top: 60px;
   margin-bottom: 32px;
 }
 
@@ -369,20 +512,23 @@ button {
   width: 502px;
   margin-bottom: 44px;
   color: #202321;
+  margin-left: 135px;
 }
 
 .questions-form {
-  width: 575px;
   margin-bottom: 28px;
   display: block;
+  padding: 0 98px 0 100px;
 }
 
 .form-button {
   font-size: 24px;
   font-weight: 500;
   line-height: 29px;
-  padding: 20px 233px;
+  width: 100%;
   color: #f7fbfb;
+  border: 0px;
+  padding: 20px 231px;
 }
 
 .questions-form .form-row {
@@ -464,55 +610,6 @@ textarea:valid ~ label {
   transform: scale(1);
 }
 
-.submit-btn .input-data {
-  overflow: hidden;
-  height: 45px !important;
-  width: 25% !important;
-}
-
-.submit-btn .input-data .inner {
-  height: 100%;
-  width: 300%;
-  position: absolute;
-  left: -100%;
-  background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
-  transition: all 0.4s;
-}
-
-.submit-btn .input-data:hover .inner {
-  left: 0;
-}
-
-.submit-btn .input-data input {
-  background: none;
-  border: none;
-  color: #fff;
-  font-size: 17px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  cursor: pointer;
-  position: relative;
-  z-index: 2;
-}
-
-@media (max-width: 700px) {
-  .container .text {
-    font-size: 30px;
-  }
-  .container form {
-    padding: 10px 0 0 0;
-  }
-  .container form .form-row {
-    display: block;
-  }
-  form .form-row .input-data {
-    margin: 35px 0 !important;
-  }
-  .submit-btn .input-data {
-    width: 40% !important;
-  }
-}
 .footer {
   background-color: #202321;
   font-family: Montserrat;

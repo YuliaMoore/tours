@@ -18,7 +18,10 @@
   display: block;
   margin-top: 30px;
   margin-right: 0;
-  margin-right: 628px;
+  margin-right: 231px;
+  @media screen and (min-width: 768px) {
+    margin-right: 628px;
+  }
   @media screen and (min-width: 1440px) {
     margin-right: 238px;
   }

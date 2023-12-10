@@ -43,15 +43,19 @@ body {
 
 h2 {
   font-family: Montserrat;
-  font-size: 52px;
   font-weight: 400;
-  line-height: 63px;
+  font-size: 32px;
+  line-height: 39px;
   letter-spacing: 0em;
   text-align: center;
   color: #1b1d1b;
+  margin-top: 52px;
+  margin-bottom: 28px;
 }
 @media screen and (min-width: 768px) {
   h2 {
+    font-size: 52px;
+    line-height: 63px;
     margin-bottom: 40px;
     margin-top: 80px;
   }
@@ -81,7 +85,7 @@ h2 {
 .container {
   padding: 0 32px;
 }
-@media screen and (min-width: 765px) {
+@media screen and (min-width: 768px) {
   .container {
     padding: 0 20px;
   }
@@ -119,7 +123,12 @@ button {
   display: block;
   margin-top: 30px;
   margin-right: 0;
-  margin-right: 628px;
+  margin-right: 231px;
+}
+@media screen and (min-width: 768px) {
+  .logo_img {
+    margin-right: 628px;
+  }
 }
 @media screen and (min-width: 1440px) {
   .logo_img {
@@ -184,10 +193,12 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-image: url(../images/hero/hero_mobile.jpg);
+  height: 788px;
 }
-@media screen and (min-width: 765px) {
+@media screen and (min-width: 768px) {
   .hero {
-    background-image: url(../../images/hero/hero_tablet_bg.jpg);
+    background-image: url(../images/hero/hero_tablet_bg.jpg);
     height: 818px;
   }
 }
@@ -206,8 +217,9 @@ button {
   line-height: 48.76px;
   text-align: center;
   margin-bottom: 60px;
+  padding-top: 188px;
 }
-@media screen and (min-width: 765px) {
+@media screen and (min-width: 768px) {
   .hero__title {
     font-size: 68px;
     font-weight: 400;
@@ -230,10 +242,11 @@ button {
   font-weight: 500;
   line-height: 20px;
   letter-spacing: 0em;
+  margin-bottom: 88px;
   text-align: center;
   color: #f7fbfb;
 }
-@media screen and (min-width: 765px) {
+@media screen and (min-width: 768px) {
   .hero__text {
     font-size: 20px;
     line-height: 24px;
@@ -255,8 +268,9 @@ button {
   font-family: Montserrat;
   font-weight: 500;
   font-size: 16px;
+  line-height: 22px;
 }
-@media screen and (min-width: 765px) {
+@media screen and (min-width: 768px) {
   .hero__button {
     font-size: 20px;
     line-height: 24px;
@@ -270,10 +284,8 @@ button {
   }
 }
 
-@media screen and (min-width: 765px) {
-  .social-list {
-    display: none;
-  }
+.social-list {
+  display: none;
 }
 @media screen and (min-width: 1440px) {
   .social-list {
@@ -291,6 +303,8 @@ button {
   font-weight: 400;
   letter-spacing: 0em;
   text-align: left;
+  font-size: 16px;
+  line-height: 20px;
 }
 @media screen and (min-width: 768px) {
   .about-text {
@@ -311,6 +325,9 @@ button {
 
 .advantages {
   background-repeat: no-repeat;
+  background-image: url("../../images/advantages/advantages_mobile_bg.jpg");
+  background-position: center top 67px;
+  padding-bottom: 87px;
 }
 @media screen and (min-width: 768px) {
   .advantages {
@@ -330,6 +347,9 @@ button {
   }
 }
 
+.advantages-list {
+  margin-top: 115px;
+}
 @media screen and (min-width: 768px) {
   .advantages-list {
     margin-left: 62px;
@@ -359,13 +379,17 @@ button {
   letter-spacing: 0em;
   text-align: left;
   color: #f7fbfb;
-  height: 64px;
   background-color: #5b86a1;
   align-items: center;
+  font-size: 14px;
+  line-height: 17px;
+  height: 40px;
+  margin-bottom: 28px;
 }
 @media screen and (min-width: 768px) {
   .advantages-item {
     width: 604px;
+    height: 64px;
     margin-bottom: 20px;
     font-size: 20px;
     line-height: 24px;
@@ -394,21 +418,17 @@ button {
   }
 }
 
-.tours-list {
-  display: flex;
-  gap: 20px;
-}
-
-.tours-item {
+.tours-slide {
   border: 1px solid #5b86a1;
+  width: 311px;
 }
 @media screen and (min-width: 768px) {
-  .tours-item {
+  .tours-slide {
     width: 354px;
   }
 }
 @media screen and (min-width: 1440px) {
-  .tours-item {
+  .tours-slide {
     width: 377px;
   }
 }
@@ -416,6 +436,7 @@ button {
 .tour-image {
   display: block;
   margin-bottom: 44px;
+  width: 311px;
 }
 @media screen and (min-width: 768px) {
   .tour-image {
@@ -434,6 +455,8 @@ button {
   margin-bottom: 20px;
   text-align: left;
   margin-left: 20px;
+  font-size: 20px;
+  line-height: 24px;
 }
 @media screen and (min-width: 768px) {
   .tour-title {
@@ -454,6 +477,8 @@ button {
   margin-bottom: 36px;
   text-align: left;
   margin-left: 20px;
+  font-size: 16px;
+  line-height: 20px;
 }
 @media screen and (min-width: 768px) {
   .tour-price {
@@ -473,6 +498,9 @@ button {
   color: #f7fbfb;
   background-color: #5b86a1;
   margin-bottom: 48px;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 16.5px 73px;
 }
 @media screen and (min-width: 768px) {
   .tour-button {
@@ -489,15 +517,34 @@ button {
   }
 }
 
-.reviews-list {
+.tours-buttons-wrap {
   display: flex;
-  gap: 19px;
+  margin-left: 107px;
+  gap: 40px;
+}
+@media screen and (min-width: 768px) {
+  .tours-buttons-wrap {
+    margin-left: 332px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .reviews-list {
+    display: flex;
+    gap: 19px;
+  }
 }
 
 .review-item {
   background-image: url(../images/reviews/Review_desk.jpg);
   background-repeat: no-repeat;
   border: 1px solid #5b86a1;
+  width: 311px;
+  height: 452px;
+}
+@media screen and (max-width: 767px) {
+  .review-item {
+    margin-bottom: 32px;
+  }
 }
 @media screen and (min-width: 768px) {
   .review-item {
@@ -516,11 +563,14 @@ button {
   position: relative;
 }
 
+.review-photo {
+  margin: 84px 106px 20px 105px;
+  width: 100px;
+  height: 100px;
+}
 @media screen and (min-width: 768px) {
   .review-photo {
     margin: 84px 127px 24px 127px;
-    width: 100px;
-    height: 100px;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -530,15 +580,18 @@ button {
 }
 
 .review-name {
+  font-style: 20px;
+  line-height: 24.38px;
+  margin-bottom: 16px;
   font-weight: 600;
   text-align: center;
   color: #5b86a1;
-  margin-bottom: 24px;
 }
 @media screen and (min-width: 768px) {
   .review-name {
     font-size: 24px;
     line-height: 29px;
+    margin-bottom: 24px;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -550,8 +603,10 @@ button {
 
 .review-text {
   font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 19.5px;
+  margin-left: 35px;
+  margin-right: 35px;
   text-align: left;
   color: #202321;
 }
@@ -568,12 +623,76 @@ button {
   }
 }
 
+@media screen and (max-width: 1439px) {
+  .review-item:last-child {
+    display: none;
+  }
+}
+
+.swiper-image {
+  height: 480px;
+  width: 280px;
+}
+@media screen and (min-width: 768px) {
+  .swiper-image {
+    width: 354px;
+    height: 275px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .swiper-image {
+    width: 575px;
+    height: 445px;
+  }
+}
+
+.swiper-slide {
+  margin-bottom: 40px;
+}
+
+.gallery-buttons-wrap {
+  display: flex;
+  margin-left: 141px;
+  margin-top: 24px;
+}
+@media screen and (min-width: 768px) {
+  .gallery-buttons-wrap {
+    margin-left: 312px;
+    margin-top: 32px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .gallery-buttons-wrap {
+    margin-left: 515px;
+    margin-top: 40px;
+  }
+}
+
+.gallery-button-prev,
+.gallery-button-next {
+  fill: rgb(91, 134, 161);
+}
+
+.gallery-button-prev {
+  margin-left: 40px;
+}
+@media screen and (min-width: 1440px) {
+  .gallery-button-prev {
+    margin-left: 60px;
+  }
+}
+
 .questions {
   background-repeat: no-repeat;
+  background-image: url(../images/questions/mobile_bg.jpg);
+  height: 632px;
+  padding-top: 116px;
+  padding-left: 32px;
+  padding-bottom: 117px;
 }
 @media screen and (min-width: 768px) {
   .questions {
-    background-image: url(../../images/questions/tablet_bg.jpg);
+    background-image: url(../images/questions/tablet_bg.jpg);
     height: 688px;
     padding-top: 88px;
     padding-bottom: 88px;
@@ -595,6 +714,9 @@ button {
   background-color: #f7fbfb;
   align-content: center;
   text-align: center;
+  width: 311px;
+  height: 399px;
+  padding-top: 28px;
 }
 @media screen and (min-width: 768px) {
   .questions-card {
@@ -611,6 +733,11 @@ button {
 
 .questions-title {
   font-weight: 500;
+  margin-bottom: 20px;
+  margin-left: 75px;
+  margin-right: 75px;
+  font-size: 20px;
+  line-height: 24.38px;
   text-align: center;
   color: #1b1d1b;
 }
@@ -640,6 +767,11 @@ button {
   text-align: center;
   margin-bottom: 44px;
   color: #202321;
+  margin-left: 34px;
+  font-size: 14px;
+  line-height: 17px;
+  margin-right: 34px;
+  margin-bottom: 24px;
 }
 @media screen and (min-width: 768px) {
   .questions-text {
@@ -660,14 +792,23 @@ button {
 }
 
 .questions-form {
-  margin-bottom: 28px;
-  display: block;
-  padding: 0 98px 0 100px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+@media screen and (min-width: 768px) {
+  .questions-form {
+    margin-bottom: 28px;
+    display: block;
+    padding: 0 98px 0 100px;
+  }
 }
 .form-button {
   font-weight: 500;
+  font-size: 16px;
+  line-height: 19.5px;
   color: #f7fbfb;
   border: 0px;
+  padding: 16px 98px;
 }
 @media screen and (min-width: 768px) {
   .form-button {
@@ -775,15 +916,23 @@ textarea:valid ~ label {
   color: #f7fbfb;
 }
 .footer-wrap {
-  display: flex;
-  align-items: baseline;
+  margin-left: 44px;
+}
+@media screen and (min-width: 768px) {
+  .footer-wrap {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .footer-title {
+  padding-top: 40px;
   font-weight: 400;
   letter-spacing: 0em;
   text-align: center;
   color: #f7fbfb;
+  font-size: 28px;
+  line-height: 34px;
 }
 @media screen and (min-width: 768px) {
   .footer-title {
@@ -806,7 +955,8 @@ textarea:valid ~ label {
   font-family: Manrope;
   font-size: 16px;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 21.86px;
+  padding-bottom: 40px;
   letter-spacing: 0em;
   text-align: center;
   color: #a3a5a3;
@@ -814,6 +964,7 @@ textarea:valid ~ label {
 @media screen and (min-width: 768px) {
   .footer-text {
     padding-bottom: 63px;
+    line-height: 22px;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -832,6 +983,8 @@ textarea:valid ~ label {
   letter-spacing: 0em;
   text-align: left;
   color: #f7fbfb;
+  font-size: 16px;
+  line-height: 20px;
 }
 @media screen and (min-width: 768px) {
   .footer-item {
@@ -856,13 +1009,16 @@ textarea:valid ~ label {
 }
 
 .footer-list-item {
-  margin-bottom: 40px;
+  margin-bottom: 26px;
 }
-
 @media screen and (min-width: 768px) {
-  .footer-list-item:last-child {
+  .footer-list-item {
     margin-bottom: 40px;
   }
+}
+
+.footer-list-item:last-child {
+  margin-bottom: 40px;
 }
 @media screen and (min-width: 1440px) {
   .footer-list-item:last-child {
@@ -873,12 +1029,16 @@ textarea:valid ~ label {
 .mobile-menu {
   display: flex;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1439px) {
   .mobile-menu {
     flex-direction: column;
     transform: translateY(-100%);
     visibility: hidden;
     opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 95vh;
     background-color: rgba(32, 35, 33, 0.7);
     transition: transform cubic-bezier(0.4, 0, 0.2, 1), opacity vcubic-bezier(0.4, 0, 0.2, 1), visibility vcubic-bezier(0.4, 0, 0.2, 1);
   }

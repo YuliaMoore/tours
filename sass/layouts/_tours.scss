@@ -1,10 +1,6 @@
-.tours-list {
-  display: flex;
-  gap: 20px;
-}
-
-.tours-item {
+.tours-slide {
   border: 1px solid #5b86a1;
+  width: 311px;
 
   @media screen and (min-width: 768px) {
     width: 354px;
@@ -17,6 +13,7 @@
 .tour-image {
   display: block;
   margin-bottom: 44px;
+  width: 311px;
   @media screen and (min-width: 768px) {
     width: 354px;
   }
@@ -31,6 +28,10 @@
   margin-bottom: 20px;
   text-align: left;
   margin-left: 20px;
+
+  font-size: 20px;
+  line-height: 24px;
+
   @media screen and (min-width: 768px) {
     font-size: 24px;
     line-height: 29px;
@@ -49,6 +50,9 @@
   text-align: left;
   margin-left: 20px;
 
+  font-size: 16px;
+  line-height: 20px;
+
   @media screen and (min-width: 768px) {
     font-size: 20px;
     line-height: 24px;
@@ -65,6 +69,11 @@
   color: #f7fbfb;
   background-color: #5b86a1;
   margin-bottom: 48px;
+
+  font-size: 16px;
+  line-height: 20px;
+  padding: 16.5px 73px;
+
   @media screen and (min-width: 768px) {
     font-size: 20px;
     line-height: 24px;
@@ -74,5 +83,16 @@
     font-size: 24px;
     line-height: 29px;
     padding: 20px 75px;
+  }
+}
+
+.tours-buttons-wrap {
+  display: flex;
+  margin-left: 107px;
+  gap: 40px;
+  @media screen and (min-width: 768px) {
+    margin-left: 332px;
+  }
+  @media screen and (min-width: 1440px) {
   }
 }

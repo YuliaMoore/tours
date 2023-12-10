@@ -1,6 +1,8 @@
 .reviews-list {
-  display: flex;
-  gap: 19px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 19px;
+  }
 }
 
 .review-item {
@@ -8,6 +10,12 @@
   background-repeat: no-repeat;
 
   border: 1px solid #5b86a1;
+
+  width: 311px;
+  height: 452px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 32px;
+  }
   @media screen and (min-width: 768px) {
     width: 354px;
     height: 504px;
@@ -22,10 +30,11 @@
 }
 
 .review-photo {
+  margin: 84px 106px 20px 105px;
+  width: 100px;
+  height: 100px;
   @media screen and (min-width: 768px) {
     margin: 84px 127px 24px 127px;
-    width: 100px;
-    height: 100px;
   }
   @media screen and (min-width: 1440px) {
     margin: 72px 126px 20px 126px;
@@ -33,14 +42,17 @@
 }
 
 .review-name {
+  font-style: 20px;
+  line-height: 24.38px;
+  margin-bottom: 16px;
   font-weight: 600;
   text-align: center;
   color: #5b86a1;
-  margin-bottom: 24px;
 
   @media screen and (min-width: 768px) {
     font-size: 24px;
     line-height: 29px;
+    margin-bottom: 24px;
   }
   @media screen and (min-width: 1440px) {
     font-size: 28px;
@@ -50,8 +62,10 @@
 
 .review-text {
   font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 19.5px;
+  margin-left: 35px;
+  margin-right: 35px;
   text-align: left;
   color: #202321;
 
@@ -62,5 +76,11 @@
   @media screen and (min-width: 1440px) {
     margin-left: 28px;
     margin-right: 28px;
+  }
+}
+
+.review-item:last-child {
+  @media screen and (max-width: 1439px) {
+    display: none;
   }
 }

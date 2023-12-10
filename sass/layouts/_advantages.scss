@@ -1,5 +1,8 @@
 .advantages {
   background-repeat: no-repeat;
+  background-image: url("../../images/advantages/advantages_mobile_bg.jpg");
+  background-position: center top 67px;
+  padding-bottom: 87px;
   @media screen and (min-width: 768px) {
     background-image: url("../images/advantages/advantages_tablet.jpg"),
       url("../images/advantages/advatages2_tablet.jpg");
@@ -19,6 +22,8 @@
   }
 }
 .advantages-list {
+  margin-top: 115px;
+
   @media screen and (min-width: 768px) {
     margin-left: 62px;
   }
@@ -42,12 +47,18 @@
   letter-spacing: 0em;
   text-align: left;
   color: #f7fbfb;
-  height: 64px;
+
   background-color: #5b86a1;
   align-items: center;
 
+  font-size: 14px;
+  line-height: 17px;
+  height: 40px;
+  margin-bottom: 28px;
+
   @media screen and (min-width: 768px) {
     width: 604px;
+    height: 64px;
     margin-bottom: 20px;
     font-size: 20px;
     line-height: 24px;

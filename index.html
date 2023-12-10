@@ -67,8 +67,8 @@
       <section class="hero container">
         <h1 class="hero__title">TOURS TO THE CARPATHIANS FROM LVIV</h1>
         <p class="hero__text">
-          Journeys to the very heart of the Carpathians <br />for those who want
-          a real reboot
+          Journeys to the very heart of the Carpathians for those who want a
+          real reboot
         </p>
         <button class="hero__button">BOOK A TOUR</button>
         <ul class="social-list">
@@ -152,30 +152,58 @@
       </section>
       <section class="tours container">
         <h2 id="tours">Upcoming tours</h2>
-        <ul class="tours-list">
-          <li class="tours-item">
-            <img src="./images/tours/hoverla.jpg" alt="" class="tour-image" />
-            <h3 class="tour-title">Ascent to Hoverla</h3>
-            <p class="tour-price">From UAH 4,499/person</p>
-            <button class="tour-button">MORE DETAILS</button>
-          </li>
-          <li class="tours-item">
-            <img src="./images/tours/bukovel.jpg" alt="" class="tour-image" />
-            <h3 class="tour-title">Ski tour to Bukovel</h3>
-            <p class="tour-price">From UAH 7,499/person</p>
-            <button class="tour-button">MORE DETAILS</button>
-          </li>
-          <li class="tours-item">
-            <img
-              src="./images/tours//carpathians.jpg"
-              alt=""
-              class="tour-image"
-            />
-            <h3 class="tour-title">Week in Carpathians</h3>
-            <p class="tour-price">From UAH 9,999/person</p>
-            <button class="tour-button">MORE DETAILS</button>
-          </li>
-        </ul>
+        <div class="swiper mySwiperTours">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="tours-slide">
+                <img
+                  src="./images/tours/hoverla.jpg"
+                  alt=""
+                  class="tour-image"
+                />
+                <h3 class="tour-title">Ascent to Hoverla</h3>
+                <p class="tour-price">From UAH 4,499/person</p>
+                <button class="tour-button">MORE DETAILS</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="tours-slide">
+                <img
+                  src="./images/tours/bukovel.jpg"
+                  alt=""
+                  class="tour-image"
+                />
+                <h3 class="tour-title">Ski tour to Bukovel</h3>
+                <p class="tour-price">From UAH 7,499/person</p>
+                <button class="tour-button">MORE DETAILS</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="tours-slide">
+                <img
+                  src="./images/tours//carpathians.jpg"
+                  alt=""
+                  class="tour-image"
+                />
+                <h3 class="tour-title">Week in Carpathians</h3>
+                <p class="tour-price">From UAH 9,999/person</p>
+                <button class="tour-button">MORE DETAILS</button>
+              </div>
+            </div>
+          </div>
+          <div class="tours-buttons-wrap">
+            <div class="tours-button-next">
+              <svg width="40" height="40">
+                <use href="./images/sprite.svg#icon-left"></use>
+              </svg>
+            </div>
+            <div class="tours-button-prev">
+              <svg width="40" height="40">
+                <use href="./images/sprite.svg#icon-right"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="reviews container">
         <h2 id="reviews">Reviews</h2>
@@ -220,32 +248,226 @@
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="./images/gallery/gallery1.jpg" alt="" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/gallery/gallery1.jpg    1x,
+                    ./images/gallery/gallery1@2x.jpg 2x
+                  "
+                  media="(min-width:1440px)" />
+                <source
+                  srcset="
+                    ./images/gallery/gallery1.jpg    1x,
+                    ./images/gallery/gallery1@2x.jpg 2x
+                  "
+                  media="(min-width:768px)" />
+                <source
+                  srcset="
+                    ./images/gallery/mobile/gallery_mob1.jpg    1x,
+                    ./images/gallery/mobile/gallery_mob1@2x.jpg 2x
+                  "
+                  media="(min-width:375px)" />
+                <img
+                  class="swiper-image"
+                  src="./images/gallery/gallery1.jpg"
+                  alt=""
+              /></picture>
             </div>
             <div class="swiper-slide">
-              <img src="./images/gallery/gallery2.jpg" alt="" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/gallery/gallery2.jpg    1x,
+                    ./images/gallery/gallery2@2x.jpg 2x
+                  "
+                  media="(min-width:1440px)" />
+                <source
+                  srcset="
+                    ./images/gallery/gallery2.jpg    1x,
+                    ./images/gallery/gallery2@2x.jpg 2x
+                  "
+                  media="(min-width:768px)" />
+                <source
+                  srcset="
+                    ./images/gallery/mobile/gallery_mob2.jpg    1x,
+                    ./images/gallery/mobile/gallery_mob2@2x.jpg 2x
+                  "
+                  media="(min-width:375px)" />
+                <img
+                  class="swiper-image"
+                  src="./images/gallery/gallery2.jpg"
+                  alt=""
+              /></picture>
             </div>
             <div class="swiper-slide">
-              <img src="./images/gallery/gallery3.jpg" alt="" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/gallery/gallery3.jpg    1x,
+                    ./images/gallery/gallery3@2x.jpg 2x
+                  "
+                  media="(min-width:1440px)" />
+                <source
+                  srcset="
+                    ./images/gallery/gallery3.jpg    1x,
+                    ./images/gallery/gallery3@2x.jpg 2x
+                  "
+                  media="(min-width:768px)" />
+                <source
+                  srcset="
+                    ./images/gallery/mobile/gallery_mob3.jpg    1x,
+                    ./images/gallery/mobile/gallery_mob3@2x.jpg 2x
+                  "
+                  media="(min-width:375px)" />
+                <img
+                  class="swiper-image"
+                  src="./images/gallery/gallery3.jpg"
+                  alt=""
+              /></picture>
             </div>
             <div class="swiper-slide">
-              <img src="./images/gallery/gallery4.jpg" alt="" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/gallery/gallery4.jpg    1x,
+                    ./images/gallery/gallery4@2x.jpg 2x
+                  "
+                  media="(min-width:1440px)" />
+                <source
+                  srcset="
+                    ./images/gallery/gallery4.jpg    1x,
+                    ./images/gallery/gallery4@2x.jpg 2x
+                  "
+                  media="(min-width:768px)" />
+                <source
+                  srcset="
+                    ./images/gallery/mobile/gallery_mob4.jpg    1x,
+                    ./images/gallery/mobile/gallery_mob4@2x.jpg 2x
+                  "
+                  media="(min-width:375px)" />
+                <img
+                  class="swiper-image"
+                  src="./images/gallery/gallery4.jpg"
+                  alt=""
+              /></picture>
             </div>
             <div class="swiper-slide">
-              <img src="./images/gallery/gallery5.jpg" alt="" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/gallery/gallery5.jpg    1x,
+                    ./images/gallery/gallery5@2x.jpg 2x
+                  "
+                  media="(min-width:1440px)" />
+                <source
+                  srcset="
+                    ./images/gallery/gallery5.jpg    1x,
+                    ./images/gallery/gallery5@2x.jpg 2x
+                  "
+                  media="(min-width:768px)" />
+                <source
+                  srcset="
+                    ./images/gallery/mobile/gallery_mob5.jpg    1x,
+                    ./images/gallery/mobile/gallery_mob5@2x.jpg 2x
+                  "
+                  media="(min-width:375px)" />
+                <img
+                  class="swiper-image"
+                  src="./images/gallery/gallery5.jpg"
+                  alt=""
+              /></picture>
             </div>
             <div class="swiper-slide">
-              <img src="./images/gallery/gallery6.jpg" alt="" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/gallery/gallery6.jpg    1x,
+                    ./images/gallery/gallery6@2x.jpg 2x
+                  "
+                  media="(min-width:1440px)" />
+                <source
+                  srcset="
+                    ./images/gallery/gallery6.jpg    1x,
+                    ./images/gallery/gallery6@2x.jpg 2x
+                  "
+                  media="(min-width:768px)" />
+                <source
+                  srcset="
+                    ./images/gallery/mobile/gallery_mob6.jpg    1x,
+                    ./images/gallery/mobile/gallery_mob6@2x.jpg 2x
+                  "
+                  media="(min-width:375px)" />
+                <img
+                  class="swiper-image"
+                  src="./images/gallery/gallery6.jpg"
+                  alt=""
+              /></picture>
             </div>
             <div class="swiper-slide">
-              <img src="./images/gallery/gallery7.jpg" alt="" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/gallery/gallery7.jpg    1x,
+                    ./images/gallery/gallery7@2x.jpg 2x
+                  "
+                  media="(min-width:1440px)" />
+                <source
+                  srcset="
+                    ./images/gallery/gallery7.jpg    1x,
+                    ./images/gallery/gallery7@2x.jpg 2x
+                  "
+                  media="(min-width:768px)" />
+                <source
+                  srcset="
+                    ./images/gallery/mobile/gallery_mob7.jpg    1x,
+                    ./images/gallery/mobile/gallery_mob7@2x.jpg 2x
+                  "
+                  media="(min-width:375px)" />
+                <img
+                  class="swiper-image"
+                  src="./images/gallery/gallery7.jpg"
+                  alt=""
+              /></picture>
             </div>
             <div class="swiper-slide">
-              <img src="./images/gallery/gallery8.jpg" alt="" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/gallery/gallery8.jpg    1x,
+                    ./images/gallery/gallery8@2x.jpg 2x
+                  "
+                  media="(min-width:1440px)" />
+                <source
+                  srcset="
+                    ./images/gallery/gallery8.jpg    1x,
+                    ./images/gallery/gallery8@2x.jpg 2x
+                  "
+                  media="(min-width:768px)" />
+                <source
+                  srcset="
+                    ./images/gallery/mobile/gallery_mob8.jpg    1x,
+                    ./images/gallery/mobile/gallery_mob8@2x.jpg 2x
+                  "
+                  media="(min-width:375px)" />
+                <img
+                  class="swiper-image"
+                  src="./images/gallery/gallery8.jpg"
+                  alt=""
+              /></picture>
             </div>
           </div>
-          <div class="swiper-button-next gallery-button-next"></div>
-          <div class="swiper-button-prev gallery-button-prev"></div>
+          <div class="gallery-buttons-wrap">
+            <div class="gallery-button-next">
+              <svg width="40" height="40">
+                <use href="./images/sprite.svg#icon-left"></use>
+              </svg>
+            </div>
+            <div class="gallery-button-prev">
+              <svg width="40" height="40">
+                <use href="./images/sprite.svg#icon-right"></use>
+              </svg>
+            </div>
+          </div>
         </div>
       </section>
       <section class="questions">
@@ -266,6 +488,13 @@
               <div class="underline"></div>
               <label class="questions-form"> Phone number* </label>
             </div>
+            <div class="input-data form-row">
+              <input type="text" name="question" required />
+              <div class="underline"></div>
+              <label class="questions-form">
+                What would you like to know?
+              </label>
+            </div>
             <button type="submit" class="form-button">CALL ME</button>
           </form>
         </div>
@@ -277,20 +506,20 @@
         <ul class="footer-list">
           <li class="footer-list-item">
             <a href="" class="footer-item">
-              <svg class="footer-icons" width="40" height="40">
+              <svg class="footer-icons" width="32" height="32">
                 <use href="./images/sprite.svg#icon-place"></use>
               </svg>
               Lviv, st. Doroshenko, 44 ​​k
             </a>
           </li>
           <li class="footer-list-item">
-            <svg class="footer-icons" width="40" height="40">
+            <svg class="footer-icons" width="32" height="32">
               <use href="./images/sprite.svg#icon-phone"></use>
             </svg>
             <a href="" class="footer-item"> +38 (097) 162 -67-90 </a>
           </li>
           <li class="footer-list-item">
-            <svg class="footer-icons" width="40" height="40">
+            <svg class="footer-icons" width="32" height="32">
               <use href="./images/sprite.svg#icon-email"></use>
             </svg>
             <a href="" class="footer-item">mandrykarpaty@gmail.com </a>
@@ -354,16 +583,49 @@
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+    <script>
+      var swiperTours = new Swiper(".mySwiperTours", {
+        navigation: {
+          nextEl: ".tours-button-next",
+          prevEl: ".tours-button-prev",
+        },
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          // when window width is >= 768px
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1440: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+        },
+      });
+    </script>
     <!-- Initialize Swiper -->
     <script>
       var swiper = new Swiper(".mySwiper", {
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+          nextEl: ".gallery-button-next",
+          prevEl: ".gallery-button-prev",
         },
-        slidesPerView: 2,
-        spaceBetween: 20,
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 1.2,
+            spaceBetween: 20,
+          },
+          // when window width is >= 480px
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+        },
       });
     </script>
     <script src="./js/mobile-menu.js"></script>

@@ -2,9 +2,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-image: url(../images/hero/hero_mobile.jpg);
+  height: 788px;
 
-  @media screen and (min-width: 765px) {
-    background-image: url(../../images/hero/hero_tablet_bg.jpg);
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/hero/hero_tablet_bg.jpg);
     height: 818px;
   }
   @media screen and (min-width: 1440px) {
@@ -21,8 +23,9 @@
   line-height: 48.76px;
   text-align: center;
   margin-bottom: 60px;
+  padding-top: 188px;
 
-  @media screen and (min-width: 765px) {
+  @media screen and (min-width: 768px) {
     font-size: 68px;
     font-weight: 400;
     line-height: 83px;
@@ -42,9 +45,11 @@
   font-weight: 500;
   line-height: 20px;
   letter-spacing: 0em;
+  margin-bottom: 88px;
   text-align: center;
   color: #f7fbfb;
-  @media screen and (min-width: 765px) {
+
+  @media screen and (min-width: 768px) {
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 60px;
@@ -64,8 +69,9 @@
   font-family: Montserrat;
   font-weight: 500;
   font-size: 16px;
+  line-height: 22px;
 
-  @media screen and (min-width: 765px) {
+  @media screen and (min-width: 768px) {
     font-size: 20px;
     line-height: 24px;
   }
@@ -77,9 +83,7 @@
 }
 
 .social-list {
-  @media screen and (min-width: 765px) {
-    display: none;
-  }
+  display: none;
 
   @media screen and (min-width: 1440px) {
     display: flex;

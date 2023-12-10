@@ -1,6 +1,6 @@
 .advantages {
   background-repeat: no-repeat;
-  @media screen and (min-width: 765px) {
+  @media screen and (min-width: 768px) {
     background-image: url("../images/advantages/advantages_tablet.jpg"),
       url("../images/advantages/advatages2_tablet.jpg");
     background-position: top 100px left, bottom right;
@@ -14,13 +14,12 @@
       url("../images/advantages/advantages3.jpg");
 
     background-position: top 140px left, top 223px right, top 223px center;
-
     margin-left: 135px;
     margin-right: 135px;
   }
 }
 .advantages-list {
-  @media screen and (min-width: 765px) {
+  @media screen and (min-width: 768px) {
     margin-left: 62px;
   }
   @media screen and (min-width: 1440px) {
@@ -28,7 +27,7 @@
   }
 }
 .advatages-title {
-  @media screen and (min-width: 765px) {
+  @media screen and (min-width: 768px) {
     margin-bottom: 120px;
   }
   @media screen and (min-width: 1440px) {
@@ -47,7 +46,7 @@
   background-color: #5b86a1;
   align-items: center;
 
-  @media screen and (min-width: 765px) {
+  @media screen and (min-width: 768px) {
     width: 604px;
     margin-bottom: 20px;
     font-size: 20px;
@@ -61,7 +60,7 @@
   }
 }
 .star {
-  @media screen and (min-width: 765px) {
+  @media screen and (min-width: 768px) {
     margin: 12px 12px 12px 44px;
   }
   @media screen and (min-width: 1440px) {

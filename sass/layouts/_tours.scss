@@ -5,13 +5,24 @@
 
 .tours-item {
   border: 1px solid #5b86a1;
-  width: 377px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 377px;
+  }
 }
 
 .tour-image {
   display: block;
   margin-bottom: 44px;
-  width: 377px;
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 377px;
+  }
 }
 
 .tour-title {
@@ -20,7 +31,7 @@
   margin-bottom: 20px;
   text-align: left;
   margin-left: 20px;
-  @media screen and (min-width: 765px) {
+  @media screen and (min-width: 768px) {
     font-size: 24px;
     line-height: 29px;
   }
@@ -38,7 +49,7 @@
   text-align: left;
   margin-left: 20px;
 
-  @media screen and (min-width: 765px) {
+  @media screen and (min-width: 768px) {
     font-size: 20px;
     line-height: 24px;
   }
@@ -54,7 +65,7 @@
   color: #f7fbfb;
   background-color: #5b86a1;
   margin-bottom: 48px;
-  @media screen and (min-width: 765px) {
+  @media screen and (min-width: 768px) {
     font-size: 20px;
     line-height: 24px;
     padding: 16px 79px;

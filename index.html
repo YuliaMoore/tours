@@ -44,6 +44,22 @@
             </li>
           </ul>
         </nav>
+        <button
+          type="button"
+          class="menu-button js-open-menu"
+          aria-expanded="false"
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="переключатель мобильного меню"
+          >
+            <use
+              class="icon-menu js-open-menu"
+              href="./images/sprite.svg#icon-menu"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -308,6 +324,34 @@
       </div>
       <p class="footer-text">©Сreated by LelekaSoft</p>
     </footer>
+
+    <div class="mobile-menu js-menu-container">
+      <button class="menu-toggle js-close-menu">
+        <svg width="40" height="40">
+          <use href="./images/icons.svg#icon-x"></use>
+        </svg>
+      </button>
+      <div class="mobile-menu__wrap">
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a href="#about" class="mobile-menu__link">About us</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#tours" class="mobile-menu__link">Tours</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#reviews" class="mobile-menu__link">Reviews</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#gallery" class="mobile-menu__link">Gallery</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#contacts" class="mobile-menu__link">Contacts</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
@@ -322,5 +366,6 @@
         spaceBetween: 20,
       });
     </script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

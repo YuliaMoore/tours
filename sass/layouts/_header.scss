@@ -8,17 +8,27 @@
 }
 .header__container {
   display: flex;
-  justify-content: space-between;
+
+  @media screen and (min-width: 1440px) {
+    justify-content: space-between;
+  }
 }
 
 .logo_img {
   display: block;
   margin-top: 30px;
-  margin-right: 238px;
+  margin-right: 0;
+  margin-right: 628px;
+  @media screen and (min-width: 1440px) {
+    margin-right: 238px;
+  }
 }
 
 .navigation {
-  margin-left: auto;
+  display: none;
+  @media screen and (min-width: 1440px) {
+    margin-left: auto;
+  }
 }
 
 .navigation__list {
@@ -29,8 +39,18 @@
 }
 
 .menu-button {
-  background-color: #f7fbfb;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
   border: none;
+  z-index: 2;
+  margin-right: 0;
+
+  @media screen and (min-width: 1440px) {
+    display: none;
+  }
 }
 
 .navigation__item {

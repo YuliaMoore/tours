@@ -29,7 +29,6 @@
 
   width: 311px;
   height: 399px;
-  padding-top: 28px;
 
   @media screen and (min-width: 768px) {
     width: 478px;
@@ -97,15 +96,32 @@
   }
 }
 .questions-form {
-  margin-left: 20px;
-  margin-right: 20px;
-  @media screen and (min-width: 768px) {
-    margin-bottom: 28px;
-    display: block;
-    padding: 0 98px 0 100px;
-  }
+  // margin-left: 20px;
+  // margin-right: 20px;
+  // @media screen and (min-width: 768px) {
+  //   margin-bottom: 28px;
+  //   display: block;
+  //   padding: 0 98px 0 100px;
+  // }
   @media screen and (min-width: 1440px) {
+    width: 575px;
+    margin-left: 98px;
   }
+}
+
+.questions-input {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  outline: none;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #a3a5a3;
+  background: transparent;
+  padding: 8px;
+  margin-bottom: 28px;
+  color: #202321;
 }
 
 .form-button {
@@ -114,7 +130,7 @@
   line-height: 19.5px;
   color: #f7fbfb;
   border: 0px;
-  padding: 16px 98px;
+  padding: 16px 96px;
 
   @media screen and (min-width: 768px) {
     width: 394px;
@@ -125,8 +141,9 @@
   @media screen and (min-width: 1440px) {
     font-size: 24px;
     line-height: 29px;
+    height: 69px;
     width: 100%;
-    padding: 20px 231px;
+    padding: 20px 210px;
   }
 }
 

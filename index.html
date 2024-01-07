@@ -70,7 +70,9 @@
           Journeys to the very heart of the Carpathians for those who want a
           real reboot
         </p>
-        <button class="hero__button">BOOK A TOUR</button>
+        <button type="button" class="hero__button" data-modal-open>
+          BOOK A TOUR
+        </button>
         <ul class="social-list">
           <li>
             <a href="https://web.telegram.org/" class="social-links">
@@ -518,25 +520,28 @@
             You can leave your questions here and our manager will call you back
             within 10 minutes
           </p>
-          <form class="questions-form" action="">
-            <div class="input-data form-row">
-              <input type="text" name="username" required />
-              <div class="underline"></div>
-              <label class="questions-form">Your name*</label>
-            </div>
-            <div class="input-data form-row">
-              <input type="tel" name="phone" required />
-              <div class="underline"></div>
-              <label class="questions-form"> Phone number* </label>
-            </div>
-            <div class="input-data form-row">
-              <input type="text" name="question" required />
-              <div class="underline"></div>
-              <label class="questions-form">
-                What would you like to know?
-              </label>
-            </div>
-            <button type="submit" class="form-button">CALL ME</button>
+          <form class="questions-form">
+            <input
+              class="questions-input"
+              type="text"
+              name="field1"
+              required
+              placeholder="Your name*"
+            />
+            <input
+              class="questions-input"
+              type="tel"
+              name="field2"
+              required
+              placeholder="Phone number*"
+            />
+            <input
+              class="questions-input"
+              type="text"
+              name="field3"
+              placeholder="What would you like to know?"
+            />
+            <button class="form-button" type="button">CALL ME</button>
           </form>
         </div>
       </section>
@@ -600,6 +605,53 @@
       </div>
       <p class="footer-text">©Сreated by LelekaSoft</p>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button data-modal-close class="btn-close">
+          <svg class="icon-close" width="40" height="40">
+            <use href="./images/sprite.svg#icon-x"></use>
+          </svg>
+        </button>
+        <h2 class="modal-title">Book a tour</h2>
+        <p class="modal-text">
+          You can leave your application here and our manager will call you
+          within 10 minutes
+        </p>
+        <form class="modal-form">
+          <input
+            type="text"
+            name="name"
+            placeholder="Your name*"
+            class="modal-input"
+          />
+          <input
+            type="phone"
+            name="phone"
+            placeholder="Phone number*"
+            class="modal-input"
+          />
+          <label class="modal-tours-check">
+            <input
+              type="checkbox"
+              name="tour"
+              value="Ascent to Hoverla"
+              class="checkbox-input"
+            />
+            Ascent to Hoverla </label
+          ><br />
+          <label class="modal-tours-check">
+            <input type="checkbox" name="tour" value="Ski tour to Bukovel" />
+            Ski tour to Bukovel </label
+          ><br />
+          <label class="modal-tours-check">
+            <input type="checkbox" name="tour" value="Week in Carpathians" />
+            Week in Carpathians
+          </label>
+          <button type="submit" class="btn modal-btn">CALL ME</button>
+        </form>
+      </div>
+    </div>
 
     <div class="mobile-menu js-menu-container">
       <button class="menu-toggle js-close-menu">
@@ -707,5 +759,6 @@
       });
     </script>
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

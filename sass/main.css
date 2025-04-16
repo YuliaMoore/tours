@@ -1,3 +1,4 @@
+@charset "UTF-8";
 h1,
 h2,
 h3,
@@ -79,6 +80,10 @@ h2 {
   -webkit-clip-path: inset(100%);
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body.modal-open {
   overflow: hidden;
 }
 
@@ -740,6 +745,42 @@ button {
   .gallery-button-prev {
     margin-left: 60px;
   }
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Додаємо пріоритет */
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Якщо треба, щоб модалка не була по центру */
+  overflow-y: auto;
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal2 {
+  position: relative;
+  z-index: 1001; /* на всякий випадок вище, ніж бекдроп */
+  background-color: rgb(247, 251, 251);
+  width: 1440px;
+}
+
+.modal2-slide-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  left: 0;
 }
 
 .questions {

@@ -70,7 +70,7 @@
           Journeys to the very heart of the Carpathians for those who want a
           real reboot
         </p>
-        <button type="button" class="hero__button" data-modal-open>
+        <button type="button" class="hero__button" data-modal-open="modal1">
           BOOK A TOUR
         </button>
         <ul class="social-list">
@@ -165,7 +165,9 @@
                 />
                 <h3 class="tour-title">Ascent to Hoverla</h3>
                 <p class="tour-price">From UAH 4,499/person</p>
-                <button class="tour-button">MORE DETAILS</button>
+                <button class="tour-button" data-modal-open="modal2">
+                  MORE DETAILS
+                </button>
               </div>
             </div>
             <div class="swiper-slide">
@@ -177,7 +179,9 @@
                 />
                 <h3 class="tour-title">Ski tour to Bukovel</h3>
                 <p class="tour-price">From UAH 7,499/person</p>
-                <button class="tour-button">MORE DETAILS</button>
+                <button class="tour-button" data-modal-open="modal3">
+                  MORE DETAILS
+                </button>
               </div>
             </div>
             <div class="swiper-slide">
@@ -606,9 +610,9 @@
       <p class="footer-text">©Сreated by LelekaSoft</p>
     </footer>
 
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal="modal1">
       <div class="modal">
-        <button data-modal-close class="btn-close">
+        <button data-modal-close="modal1" class="btn-close">
           <svg class="icon-close" width="40" height="40">
             <use href="./images/sprite.svg#icon-x"></use>
           </svg>
@@ -650,6 +654,87 @@
           </label>
           <button type="submit" class="btn modal-btn">CALL ME</button>
         </form>
+      </div>
+    </div>
+
+    <div class="backdrop is-hidden" data-modal="modal2">
+      <div class="modal">
+        <button data-modal-close="modal2" class="btn-close">
+          <svg class="icon-close" width="40" height="40">
+            <use href="./images/sprite.svg#icon-x"></use>
+          </svg>
+        </button>
+        <h2 class="modal2-title">Ascent to Hoverla</h2>
+        <div class="slider">
+          <div class="slide active">
+            <img
+              class="modal2-slide-img"
+              src="./images/modal2/hoverla1.jpg"
+              alt="1"
+            />
+            <h3>1 day</h3>
+            <ul>
+              <li>Departure from Lviv</li>
+              <li>Manyava Hermitage</li>
+              <li>Manyava waterfall</li>
+              <li>Arrival to Bukovel</li>
+              <li>Check-in</li>
+              <li>Dinner</li>
+              <li>Evening by the fireplace</li>
+            </ul>
+          </div>
+          <div class="slide"><img src="img2.jpg" alt="2" /></div>
+          <div class="slide"><img src="img3.jpg" alt="3" /></div>
+
+          <button class="prev">&#10094;</button>
+          <button class="next">&#10095;</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="backdrop is-hidden" data-modal="modal2">
+      <div class="modal-content modal2">
+        <button data-modal-close="modal2">
+          <svg class="icon-close" width="40" height="40">
+            <use href="./images/sprite.svg#icon-x"></use>
+          </svg>
+        </button>
+        <h2 class="modal2-title">Ascent to Hoverla</h2>
+        <div class="slider">
+          <div class="slide active">
+            <img
+              class="modal2-slide-img"
+              src="./images/modal2/hoverla1.jpg"
+              alt="1"
+            />
+            <h3>1 day</h3>
+            <ul>
+              <li>Departure from Lviv</li>
+              <li>Manyava Hermitage</li>
+              <li>Manyava waterfall</li>
+              <li>Arrival to Bukovel</li>
+              <li>Check-in</li>
+              <li>Dinner</li>
+              <li>Evening by the fireplace</li>
+            </ul>
+          </div>
+          <div class="slide"><img src="img2.jpg" alt="2" /></div>
+          <div class="slide"><img src="img3.jpg" alt="3" /></div>
+
+          <button class="prev">&#10094;</button>
+          <button class="next">&#10095;</button>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="backdrop is-hidden" data-modal="modal3">
+      <div class="modal-content modal3">
+        <button data-modal-close="modal3">
+          <svg class="icon-close" width="40" height="40">
+            <use href="./images/sprite.svg#icon-x"></use>
+          </svg>
+        </button>
+        <h2 class="modal2-title">Ascent to Hoverla</h2>
       </div>
     </div>
 
